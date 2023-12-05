@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    color: #007bff;
+    font-size: 1.8em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li::before {
+    content: '•';
+    color: #007bff;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.languages p {
+    position: relative;
+    padding-left: 20px; /* Adjust as needed for alignment */
+}
+
+.languages p::before {
+    content: '\2022'; /* Unicode for bullet point */
+    position: absolute;
+    left: 0; /* Adjust as needed */
+    top: 0;
+    font-size: 1em; /* Adjust size as needed */
+    line-height: 1; /* Adjust line height to align with text */
+}
+
+.languages strong {
+    font-weight: bold;
+}
+
+
+
+.hobbies, .volunteer-work {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.hobbies h2, .volunteer-work h2 {
+    color: #6c757d;
+}
+#joke-container {
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#joke-container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#joke-container p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #3b3535;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 800px) {
+    .skills, .languages {
+        grid-template-columns: 1fr;
+    }
+}
